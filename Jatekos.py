@@ -3,8 +3,10 @@ class Jatekos:
         self.eletero = eletero
         self.ehseg = ehseg
 
-    def szovegListaba(self, sorIndex: int):
-        self.sorIndex = sorIndex
+
+
+
+
 
 
 
