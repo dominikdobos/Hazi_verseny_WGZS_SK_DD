@@ -3,13 +3,5 @@ class Jatekos:
         self.eletero = eletero
         self.ehseg = ehseg
 
-
-
-
-
-
-
-
-
-
-
+    def __str__(self):
+        return f"Életerő: {self.eletero}\nÉhség: {self.ehseg}"

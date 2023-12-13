@@ -2,16 +2,15 @@ import Jatekos
 import szoveg
 targyakLista = []
 jatekos = Jatekos.Jatekos(5,0)
-parancsokLista = ["megy","eszik","felvesz","hasznal"]
+parancsokLista = ["megy","eszik","felvesz","hasznal", "stat"]
 
 def jatekMenet():
     hanyadik = 1
     while hanyadik < 14:
+        if hanyadik < 4:
+            jatekos.eletero -= 1
         if helyszin(hanyadik):
             hanyadik += 1
-
-
-
 
 
 def felhasznaloBekeres():
@@ -30,6 +29,9 @@ def helyszin(hanyadik):
                 if parancssor[1] == helyszin[hanyadik-1]:
                     tovabbhalad = True
                     return tovabbhalad
+        if len(parancssor) == 1:
+            if parancssor[0] == parancsokLista[-1]:
+                print(jatekos)
         else:
             parancs = felhasznaloBekeres()
 
