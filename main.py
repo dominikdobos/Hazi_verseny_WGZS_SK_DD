@@ -1,3 +1,3 @@
-import  jatekter
+import jatekter
 jatekter.jatekMenet()
 
