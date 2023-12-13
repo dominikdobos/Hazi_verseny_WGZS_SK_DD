@@ -3,6 +3,8 @@ import szoveg
 targyakLista = []
 jatekos = Jatekos.Jatekos(5,0)
 parancsokLista = ["megy","eszik","felvesz","hasznal", "stat"]
+evettSzam = 0   # Számolja, hogy hány kör telt el evés óta
+eletero = jatekos.eletero
 
 def jatekMenet():
     hanyadik = 1
@@ -15,6 +17,12 @@ def jatekMenet():
 
 def felhasznaloBekeres():
     return input("Parancssor: ")
+
+def hanyKorMiotaEvett(hanyadikKor: int, nemEvett=evettSzam, eletero=eletero):
+    if jatekos.eletero == eletero:
+        nemEvett += 1
+    else:
+        nemEvett = 0
 
 
 def helyszin(hanyadik):
