@@ -1,2 +1,3 @@
-
+import  jatekter
+jatekter.jatekMenet()
 
