@@ -1,4 +1,5 @@
 import Jatekos
+import szoveg
 targyakLista = []
 jatekos = Jatekos.Jatekos(5,0)
 parancsokLista = ["megy","eszik","felvesz","hasznal"]
@@ -8,6 +9,7 @@ def jatekMenet():
 
 
 def helyszin1():
-    pass
+    szoveg.szovegListaba(1)
+    
 
 
