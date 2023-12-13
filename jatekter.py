@@ -30,13 +30,14 @@ def helyszin(hanyadik):
     szoveg.szovegListaba(hanyadik)
     parancs = felhasznaloBekeres()
     parancssor = parancs.split(" ")
-    helyszin = ["epulet"]
+    helyszin = ["epulet", "kut", "kastely"]
     while not tovabbhalad:
         if parancssor[0] == parancsokLista[0]:
             if len(parancssor) == 2:
-                if parancssor[1] == helyszin[hanyadik-1]:
+                if hanyadik == 1 and parancssor[1] == helyszin[hanyadik-1]:
                     tovabbhalad = True
                     return tovabbhalad
+                # if hanyadik == 2 and parancssor[1] == helyszin[]
         if len(parancssor) == 1:
             if parancssor[0] == parancsokLista[-1]:
                 print(jatekos)
